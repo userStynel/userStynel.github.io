@@ -3,6 +3,7 @@ layout: article
 title:  "PSEUDO-DOOM #1"
 date:   2021-08-24 19:04:08 +0900
 categories: pseudo-doom
+tech: [node.js, socket.io, javascript]
 ---
 레이캐스팅이란 ~~~~~~~~~~~~~~~ 입니다
 
