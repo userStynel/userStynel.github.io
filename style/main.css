@@ -1,4 +1,27 @@
 body{
-    background: #121212;
+    background: #282828;
     color: white;
+}
+
+.group{
+    border: 1px white solid;
+    margin-right:1rem;
+    padding: 1rem;
+}
+
+.group h3{
+    text-align: center;
+}
+
+.group ul{
+    list-style: none;
+    padding:0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    transform: scale(1.15);
 }

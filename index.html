@@ -7,14 +7,28 @@
     <link href = "/style/main.css" rel = "stylesheet">
   </head>
   <body>
-    <h2>WELCOME TO STYNEL HOME 🏠</h2>
-    <h3>Recent post</h3>
-    <ul>
-        {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+    <h2>💻 userstynel.github.io </h2>
+    <div style = "display:flex">
+      <div class = "group">
+      <h3>Recent post</h3>
+      <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class = "group">
+        <h3>DEVLOG</h3>
+        <ul>
+            {% for ct in site.category_list %}
+              <li>
+                {{ ct }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+    </div>
   </body>
 </html>
