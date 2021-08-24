@@ -17,7 +17,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-category_list: [pseudo-doom,cloud-pen,zapper-light]
+category_list: [html5-raycaster,cloud-pen,zapper-light]
 tech_img:
   arduino: 'https://camo.githubusercontent.com/67a6394d5dac9485da01feef49edcca059d9195666c42bc373223abbfec80f81/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f41726475696e6f2d3030393739443f7374796c653d666f722d7468652d6261646765266c6f676f3d41726475696e6f266c6f676f436f6c6f723d7768697465'
   winapi: 'https://camo.githubusercontent.com/41281b9a32f13ac5b9d41ed9bae12c0de662f948f9bf59fd19df354fe49af146/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f57696e646f77732d3030373844363f7374796c653d666f722d7468652d6261646765266c6f676f3d77696e646f7773266c6f676f436f6c6f723d7768697465'

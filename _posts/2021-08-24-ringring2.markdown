@@ -1,8 +1,8 @@
 ---
 layout: article
-title:  "PSEUDO-DOOM #2"
+title:  "HTML5-RAYCASTER #2"
 date:   2021-08-24 19:07:09 +0900
-categories: pseudo-doom
+categories: html5-raycaster
 tech: [node.js, socket.io, javascript]
 ---
 로켓펀치 링링!
