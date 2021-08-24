@@ -1,86 +1,14 @@
 ---
 layout: article
 title:  "zapper-light #1"
-date:   2021-08-24 19:15:09 +0900
+date:   2021-08-24 23:15:09 +0900
 categories: zapper-light
 tech: [arduino]
 ---
-로켓펀치 링링!
+아두이노로 재퍼건을 만들기 위해 무엇이 필요한가 생각을 해 보았습니다
 
-{% highlight c++ %}
-#include <cstdio>
-#include <vector>
-#define MAX 1000
-using namespace std;
+### 만들기 위해 구매한 것
+- 아두이노 우노
+- MPU6050 가속도 센서
+- HM-10 블루투스 모듈
 
-vector<int> GRAPH[MAX+1];
-vector<int> topological_sort;
-bool visited[MAX+1];
-int ROUTE[MAX+1];
-int TIME[MAX+1];
-
-int N, K, W;
-
-void init()
-{
-  topological_sort.clear();
-  for(int i = 0; i<=MAX; i++)
-  {
-    visited[i] = false;
-    ROUTE[i] = 0;
-    GRAPH[i].clear();
-  }
-}
-
-void dfs(int here)
-{
-  visited[here] = true;
-  for(int i = 0; i<GRAPH[here].size(); i++)
-  {
-    int next = GRAPH[here][i];
-    if(!visited[next])
-      dfs(next);
-  }
-  topological_sort.push_back(here);
-}
-
-void tps()
-{
-  for(int i = 1; i<=N; i++)
-    if(!visited[i]) dfs(i);
-}
-
-int main()
-{
-  int tc;
-  scanf(" %d", &tc);
-  while(tc--)
-  {
-    int src, dst;
-    init();
-    scanf(" %d %d", &N, &K);
-    for(int i = 1; i<=N; i++)
-      scanf(" %d", &TIME[i]);
-    for(int i = 0; i<K; i++)
-    {
-      scanf(" %d %d", &src, &dst);
-      GRAPH[src].push_back(dst);
-    }
-    scanf(" %d", &W);
-    tps();
-    for(int i = topological_sort.size()-1; i>=0; i--)
-    {
-      int here = topological_sort[i];
-      if(here == W)
-        break;
-      for(int j = 0; j<GRAPH[here].size(); j++)
-      {
-        int next = GRAPH[here][j];
-        if(ROUTE[next] < ROUTE[here]+TIME[here])
-          ROUTE[next] = ROUTE[here]+TIME[here];
-      }
-    }
-    printf("%d\n", ROUTE[W]+TIME[W]);
-  }
-}
-{% endhighlight %}

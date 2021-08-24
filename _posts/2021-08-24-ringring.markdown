@@ -5,7 +5,7 @@ date:   2021-08-24 19:04:08 +0900
 categories: html5-raycaster
 tech: [node.js, socket.io, javascript]
 ---
-레이캐스팅이란 ~~~~~~~~~~~~~~~ 입니다
+저는 군대에서 웹 게임 개발에 관심을 가지게 되었습니다. 왜냐면 유니티 같은 엔진을 이용하지 못하는 사지방 환경 상, 알고리즘 문제 풀이 아니면 웹 게임 개발 밖에 할 게 없었기 때문이죠. 그래서 처음엔 pharser라는 엔진을 이용하여서 컨티뉴티라는 게임을 만들었습니다
 
 {% highlight javascript %}
 class Vector2{

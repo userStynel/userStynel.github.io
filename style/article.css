@@ -3,6 +3,12 @@ body{
   color: white;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px white solid;
+}
+
 .highlight {width:fit-content;}
 .highlight pre { margin: 0; padding: 1rem;}
 .highlight .gh {
