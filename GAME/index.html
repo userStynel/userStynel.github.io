@@ -1,0 +1,27 @@
+---
+categories: [parser-continuity]
+categories_out:
+    html5-raycaster: https://raycaster.herokuapp.com/
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href = "/style/main.css" rel = "stylesheet">
+  </head>
+  <body>
+    <h2>🎮 playing games </h2>
+    <div style = "display:flex">
+      <div class = "group">
+        <h3>LIST</h3>
+        <ul>
+            {% for ct in page.categories %}
+              <li>
+                <a href = './{{ct}}'>{{ ct }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+    </div>
+  </body>
+</html>

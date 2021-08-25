@@ -9,6 +9,9 @@ a{
   border-bottom: 1px white solid;
 }
 
+section{
+  border-bottom: 1px white solid;
+}
 .highlight {width:fit-content;}
 .highlight pre { margin: 0; padding: 1rem;}
 .highlight .gh {
