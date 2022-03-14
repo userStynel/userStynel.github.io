@@ -7,9 +7,23 @@
     <link href = "/style/main.css" rel = "stylesheet">
   </head>
   <body>
-    <h2>💻 userstynel.github.io </h2>
-    <h5><a href = "./GAME">🎮Playing games</a></h5>
+    <h2>💻 항해일지 </h2>
     <div style = "display:flex">
+    <div class = "introduce_box">
+      <div style = "display: flex; border:2px white solid; padding:15px 15px 15px 15px;">
+        <img class = "profile_img" src = "./IMGS/profile.png">
+        <div style = "margin-left:25px;">
+          <h3>Stynel (Kwonwoo Jeong)</h3>
+          <p>
+            게임 개발과 픽셀아트에 관심이 있습니다
+            <br>
+            <a href = "https://twitter.com/Lostynel">twitter</a> | <a href = "https://blog.naver.com/ltnyst10">naver blog</a>
+          </p>
+        </div>
+      </div>
+      <h5><a href = "./GAME">🎮Playing games</a></h5>
+    </div>
+    <div style = "display:flex; margin-left:25px;">
       <div class = "group">
       <h3>Recent post</h3>
       <ul>
@@ -30,6 +44,7 @@
             {% endfor %}
           </ul>
         </div>
+    </div>
     </div>
   </body>
 </html>

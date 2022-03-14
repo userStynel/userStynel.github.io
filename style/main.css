@@ -3,6 +3,12 @@ body{
     color: white;
 }
 
+.profile_img{
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+}
+
 .group{
     border: 1px white solid;
     margin-right:1rem;
