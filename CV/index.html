@@ -1,4 +1,60 @@
 <link href = "/style/common.css" rel = "stylesheet">
-<h1>Curriculum Vitae</h1>
-<p>Kwonwoo Jeong</p>
-<p>Third Grade @Soongsil University</p>
+<link href = "/style/cv.css" rel = "stylesheet">
+<div style = "display: flex;">
+    <div class = "container">
+        <div id = "yt_before" class ="btn">⬅️</div>
+        <iframe id = "content" width="640" height="480" src="https://www.youtube.com/embed/Hvad0aqftVw" frameborder="0" allowfullscreen></iframe>
+        <div id = "yt_after" class = "btn">➡️</div>
+    </div>
+    <div class = "cv">
+        <h1>Curriculum Vitae</h1>
+        <p>Kwonwoo Jeong</p>
+        <p>Third Grade @Soongsil University</p>
+    </div>
+</div>
+<script>
+    let nowIndex = 0;
+    let list = [];
+    function addObjectToList(typename, contentname){
+        list.push({type:typename, content: contentname});
+    }
+    function makingIframe(parent, content){
+        console.log(parent);
+        let ifr = document.createElement('iframe');
+        ifr.setAttribute('id', 'content');
+        ifr.setAttribute('width', '640');
+        ifr.setAttribute('height', '480');
+        ifr.setAttribute('src', `https://www.youtube.com/embed/${content}`);
+        ifr.setAttribute('frameborder', "");
+        parent.children[0].insertAdjacentElement("afterEnd", ifr);
+    }
+    function makingIMG(parent, content){
+        let img = document.createElement('img');
+        img.setAttribute('id', 'content');
+        img.setAttribute('width', '640');
+        img.setAttribute('height', '480');
+        img.setAttribute('src', `./imgs/${content}`);
+        parent.children[0].insertAdjacentElement("afterEnd", img);
+    }
+
+    function nextPage(p){
+        document.getElementById('content').parentNode.removeChild(document.getElementById('content'));
+        nowIndex = (nowIndex + p) % list.length;
+        if(nowIndex <= -1) nowIndex = list.length-1;
+        if(list[nowIndex].type == "yt")
+            makingIframe(document.getElementsByClassName('container')[0], list[nowIndex].content);
+        else if(list[nowIndex].type == "img")
+            makingIMG(document.getElementsByClassName('container')[0], list[nowIndex].content);
+    }
+    document.getElementById("yt_before").addEventListener('click', ()=>{
+        nextPage(-1);
+    });
+    document.getElementById("yt_after").addEventListener('click', ()=>{
+        nextPage(1);
+    });
+    addObjectToList("yt", "Hvad0aqftVw");
+    addObjectToList("yt", "q31qhoUEFVA");
+    addObjectToList("img", "sushi.gif");
+    addObjectToList("img", "projectile3.png");
+    addObjectToList("img", "projectile4.png");
+</script>

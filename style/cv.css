@@ -1,0 +1,24 @@
+.container{
+    display: flex; 
+    align-items: center;
+    border: 3px solid white;
+    width: fit-content;
+    padding-top:25px;
+    padding-bottom: 25px;
+    margin-right: 25px;
+}
+.btn{
+    width:100px;
+    height:50px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.cv h1{
+    margin: 0;
+}
