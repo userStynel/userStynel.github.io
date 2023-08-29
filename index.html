@@ -3,33 +3,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>항해일지</title>
+    <title>SAILING REPORT</title>
     <meta charset="utf-8">
+    <link href = "/style/common.css" rel = "stylesheet">
     <link href = "/style/main.css" rel = "stylesheet">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+     {% include font.html %}
     </style>
   </head>
   <body>
-    <div style = "display:flex">
-    <div class = "introduce_box">
-      <div style = "display: flex; border:2px white solid; padding:15px 15px 15px 15px;">
-        <img class = "profile_img" src = "./IMGS/katsuragi.gif">
-        <div style = "margin-left:25px;">
-          <h3> STYNEL</h3>
-          <p>
-            그래픽 렌더링과 네트워크 프로그래밍에 관심이 있습니다 <br>
-            컴퓨터 게임 제작, VR/AR 분야에 관심이 있습니다
-            <br>
-            <a href = "./CV">📃CV</a>
-            <a href = "https://www.youtube.com/channel/UC9L3_DvLL0NlN0UCKupiKhQ">🎥Youtube</a>
-          </p>
+    {% include banner.html %}
+    <div style = "display:flex; justify-content: center;">
+    <div class = "central_box">
+      <div class = "introduce_box border1">
+          <div style = "padding-left:25px; padding-right:25px;">
+            <h3> KWONWOO </h3>
+            <p>
+              I am interested in Computer Graphics & Vision <br>
+              <a href = "./CV" target="_blank" >📃CV</a>
+              <a href = "https://www.youtube.com/channel/UC9L3_DvLL0NlN0UCKupiKhQ">🎥Youtube</a>
+            </p>
         </div>
-      </div>
+    </div>
+    <div style = "display: flex; justify-content: center; padding:0.5rem;" class ="border1">
+      <a class="twitter-timeline" data-width="350" data-height="220" href="https://twitter.com/kwonwoo___?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    </div>
     </div>
     <div style = "display:flex; margin-left:25px;">
-      <div class = "group">
-      <h3>Recent post</h3>
+      <div class = "group border1">
+      <h3>Recent Posts</h3>
       <ul>
           {% for post in site.posts %}
             <li>
@@ -37,20 +38,10 @@
             </li>
           {% endfor %}
         </ul>
+        <p style ="float:right; font-weight: bold;"><a href = "ARTICLES/">more post...</a></p>
       </div>
-      <!--
-      <div class = "group">
-        <h3>DEVLOG</h3>
-        <ul>
-            {% for ct in site.category_list %}
-              <li>
-                <a href = './devlog/{{ct}}'>{{ ct }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-        -->
     </div>
     </div>
+    {% include footer.html %}
   </body>
 </html>

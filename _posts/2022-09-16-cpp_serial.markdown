@@ -1,7 +1,8 @@
 ---
 layout: article
-title:  "C++ 시리얼 통신"
+title:  "Serial Communication in C++"
 categories: nothing
+tags: ["test", "test2"]
 ---
 
 아두이노는 시리얼 통신을 통해 데이터를 주고 받을 수 있습니다, 따라서 C++를 이용하여 아두이노와 데이터를 주고 받는 프로그램을 작성할 수 있습니다

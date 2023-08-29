@@ -1,6 +1,6 @@
 ---
 layout: article
-title:  "Inigo Quilez의 SDF 함수 분석 1: Sphere ~ Capped Torus"
+title:  "SDF Functions: Sphere ~ Capped Torus"
 categories: graphics
 ---
 2D 사진에서 이미지를 점으로 표현하는 픽셀 방식과 수식으로 표현하는 벡터 방식이 있는 것 처럼, 3D 그래픽에서도 물체를 삼각형의 세 점을 이용해서 나타내는 폴리곤 방식과 수식으로 나타내는 레이 마칭(Ray Marching) 방식이 있습니다

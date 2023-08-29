@@ -1,18 +1,64 @@
+---
+---
+<title>
+    CV
+</title>
+<style>
+    {% include font.html %}
+</style>
 <link href = "/style/common.css" rel = "stylesheet">
 <link href = "/style/cv.css" rel = "stylesheet">
-<div style = "display: flex;">
-    <div class = "container">
-        <div id = "yt_before" class ="btn">⬅️</div>
-        <iframe id = "content" width="640" height="480" src="https://www.youtube.com/embed/Hvad0aqftVw" frameborder="0" allowfullscreen></iframe>
-        <div id = "yt_after" class = "btn">➡️</div>
-    </div>
+<div style = "display: flex; justify-content: center;">
     <div class = "cv">
-        <h1>Curriculum Vitae</h1>
-        <p>Kwonwoo Jeong</p>
-        <p>Third Grade @Soongsil University</p>
+        <div class = "head">
+            <div>
+                <h1>KWONWOO JEONG</h1>
+                <p>Email: ltnyst10@gmail.com</p>
+                <p>linkedin</p>
+                <p>github</p>
+            </div>
+            <div style = "text-align: center;">
+                <!--<img style = "width:150px; height: 150px; border-radius:50%" src = "./imgs/profile.jpg">-->
+            </div>
+        </div>
+        <div class = "article" style = "display: flex;">
+            <div class = "left_side">
+                <div class = "education">
+                    <h2>EDUCATION</h2>
+                    <div class = "a">
+                    <p>KOREA DIGITAL MEDIA HIGHSCHOOL (HACKING DEFENSE)</p>
+                    <p>SOONGSIL UNIVERSITY (ELECTRONIC ENGINEERING) <span class = "add">GPA: 3.83 / 4.5</span></p>
+                    </div>    
+                </div>
+                <div class = "skills">
+                    <h2>SKILLS</h2>
+                    <div class = "a">
+                        <p>C/C++, WinAPI, OpenGL, OpenCV, Python, <br>JAVA Tensorflow, HTML/JS/CSS, Node.js</p>
+                    </div>
+                </div>
+                <div class = "container">
+                    <div>
+                        <iframe id = "content" src="https://www.youtube.com/embed/Hvad0aqftVw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div style = "display: flex; justify-content: center;">
+                        <div id = "yt_before" class ="btn">⬅️</div>
+                        <div id = "yt_after" class = "btn">➡️</div>
+                    </div>
+                </div>
+            </div>
+            <div class = "right_side">
+                <div class = "CAREER">
+                    <h2>CAREER</h2>
+                    <div class = "a">
+                        <p>ABC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script>
+    /*
     let nowIndex = 0;
     let list = [];
     function addObjectToList(typename, contentname){
@@ -57,4 +103,5 @@
     addObjectToList("img", "sushi.gif");
     addObjectToList("img", "projectile3.png");
     addObjectToList("img", "projectile4.png");
+    */
 </script>

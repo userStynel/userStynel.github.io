@@ -1,11 +1,12 @@
 body{
-  background: #282828;
-  color: white;
+  margin: 0px auto;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 a{
   text-decoration: none;
-  color: white;
+  color: black;
   border-bottom: 1px white solid;
 }
 

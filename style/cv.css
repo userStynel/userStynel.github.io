@@ -1,6 +1,7 @@
+body{
+    background: none;
+}
 .container{
-    display: flex; 
-    align-items: center;
     border: 3px solid white;
     width: fit-content;
     padding-top:25px;
@@ -19,6 +20,41 @@
     opacity: 0.8;
 }
 
-.cv h1{
+body *{
     margin: 0;
+    padding: 0;
+}
+
+.cv{
+    margin: 0;
+    padding: 0;
+    width:70%;
+}
+
+.head{
+    display: flex;
+    background: #7d7dff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-bottom: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.head>div{
+    width:50%;
+}
+
+.article>div{
+    width: 50%;
+}
+
+.a{
+    padding-left: 2rem;
+}
+
+.add{
+    color: gray; font-size: 0.91rem; font-weight: bold;
 }

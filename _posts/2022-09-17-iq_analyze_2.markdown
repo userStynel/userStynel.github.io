@@ -1,6 +1,6 @@
 ---
 layout: article
-title:  "Inigo Quilez의 SDF 함수 분석 2: Cone ~ Hexagonal Prism"
+title:  "SDF Functions 2: Cone ~ Hexagonal Prism"
 categories: graphics
 ---
 [이전 포스팅](/graphics/2022/09/16/iq_analyze_1.html)에 이어서 Inigo Quilez님의 홈페이지에 올라온 SDF 함수들을 이어서 분석해보려고 합니다
